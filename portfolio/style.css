@@ -228,7 +228,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     z-index: -1;
   }
   
@@ -369,11 +369,6 @@
     padding: 80px 0;
     color: #333;
   
-    /* background-image*/
-    background-image: url("image/aboutbg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
   
   .about-container {
@@ -470,11 +465,6 @@
     padding: 80px 20px;
     background: #0f0f0f;
   
-    /* background-image*/
-    background-image: url("image/skillsbg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
   
   #skills h1::after {
@@ -552,12 +542,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 60px 20px;
-  
-    /* background-image*/
-    background-image: url("image/blogsbg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #333446;
   }
   
   #blogs h1::after {
@@ -632,12 +617,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
-    /* background-image*/
-    background-image: url("image/gallerybg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color:#05081c;
   }
 
   #gallery h1::after {
