@@ -52,9 +52,9 @@
 			<div class="container">
 				<div class="home-content">
 					<div class="intro-text">
-						<h6 class="greeting">Hello, I'm</h6>
-						<h1 class="name">Rodelyn Cardinas</h1>
-						<h2 class="title">NCII Certified in Computer System Servicing</h2>
+						<h6 class="greeting"><span class="greeting-text">Hello, I'm</span></h6>
+						<h1 class="name"><span class="name-first">Rodelyn</span> <span class="name-last">Cardinas</span></h1>
+						<h2 class="title"><span class="title-text">NCII Certified in Computer System Servicing</span></h2>
 						<p class="description">
 							I'm a dedicated student and aspiring IT professional passionate
 							about learning, exploring technology, and creating projects that
@@ -223,6 +223,17 @@
 			<h1 class="section-title">Blogs</h1>
 
 			<div class="blogs-wrapper">
+				<div class="blogs-text">
+					<p class="blogs-description">
+						Through my blogs, I hope not only to track my own progress but also to
+						inspire others who share the same passion for technology. Each post is
+						a step forward in my journey — a chance to learn, grow, and
+						contribute. As I continue exploring the IT field, I look forward to
+						sharing more insights, experiences, and meaningful lessons that shape
+						me into the professional I aspire to become.
+					</p>
+				</div>
+
 				<div class="video-container">
 					<video controls class="blog-video">
 						<source src="video/myblog.mp4" type="video/mp4" />
@@ -235,15 +246,6 @@
 						<i class="fas fa-external-link-alt"></i> Watch on YouTube
 					</a>
 				</div>
-
-				<p class="blogs-description">
-					Through my blogs, I hope not only to track my own progress but also to
-					inspire others who share the same passion for technology. Each post is
-					a step forward in my journey — a chance to learn, grow, and
-					contribute. As I continue exploring the IT field, I look forward to
-					sharing more insights, experiences, and meaningful lessons that shape
-					me into the professional I aspire to become.
-				</p>
 			</div>
 		</section>
 
@@ -302,64 +304,9 @@
 
 		<!-- CONTACT SECTION -->
 		<section id="contact">
-			<div class="container contact-container">
-				<div class="contact-info">
-					<h1>Contact Me</h1>
-					<p>
-						Feel free to reach out via email, phone, or through my social
-						networks.
-					</p>
-
-					<ul class="contact-details">
-						<li>
-							<a href="mailto:cardinasrodelyn122001@gmail.com" class="contact-link">
-								<i class="fas fa-envelope"></i>
-								<span>cardinasrodelyn122001@gmail.com</span>
-							</a>
-						</li>
-						<li>
-							<a href="tel:+639651724575" class="contact-link">
-								<i class="fas fa-phone-alt"></i>
-								<span>+63 965 172 4575</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://maps.google.com/?q=Dumaguete+City" target="_blank" class="contact-link">
-								<i class="fas fa-map-marker-alt"></i>
-								<span>Dumaguete City</span>
-							</a>
-						</li>
-					</ul>
-
-					<div class="contact-socials">
-						<a
-							href="https://www.linkedin.com/in/rodelyn-cardinas-8937a4388"
-							target="_blank"
-							aria-label="LinkedIn">
-							<i class="fab fa-linkedin-in"></i>
-						</a>
-						<a
-							href="https://github.com/Abby122001"
-							target="_blank"
-							aria-label="GitHub">
-							<i class="fab fa-github"></i>
-						</a>
-						<a
-							href="https://www.facebook.com/abbytoy0001"
-							target="_blank"
-							aria-label="Facebook">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-						<a
-							href="https://www.instagram.com/abby_zero9"
-							target="_blank"
-							aria-label="Instagram">
-							<i class="fab fa-instagram"></i>
-						</a>
-					</div>
-				</div>
-
-				<div class="contact-form">
+			<div class="contact-wrapper">
+				<h1>Contact</h1>
+				<div class="contact-form-container">
 					<form>
 						<div class="form-group">
 							<label for="name">Name</label>
@@ -385,27 +332,68 @@
 						</div>
 
 						<button type="submit" class="btn primary-btn">Send Message</button>
-					</form>
-				</div>
+				</form>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- Footer Section -->
+	<!-- Footer Section -->
 		<footer class="footer">
 			<div class="footer-top">
-			
 				<!-- Clickable Likes icon -->
 				<div class="likes-icon" id="likeBtn">
 					<i class="fa-solid fa-thumbs-up"></i>
+					<span id="likeCount">0</span>
+				</div>
+			</div>
+
+			<div class="footer-content">
+				<div class="footer-section footer-logo-section">
+					<img src="image/logo.png" alt="Logo" class="footer-logo-img" />
+					<h3>Portfolio</h3>
 				</div>
 
-				
-			</div>
-      <div class="footer-logo">
-				<img src="image/logo.png" alt="Logo" />
-			</div>
-      <div class="footer-about">
-				<h3>Portfolio</h3>
+				<div class="footer-section footer-contact">
+					<h4>Contact</h4>
+					<ul class="footer-contact-list">
+						<li>
+							<a href="mailto:cardinasrodelyn122001@gmail.com">
+								<i class="fas fa-envelope"></i>
+								<span>cardinasrodelyn122001@gmail.com</span>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+639651724575">
+								<i class="fas fa-phone-alt"></i>
+								<span>+63 965 172 4575</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://maps.google.com/?q=Dumaguete+City" target="_blank">
+								<i class="fas fa-map-marker-alt"></i>
+								<span>Dumaguete City</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer-section footer-social">
+					<h4>Follow Me</h4>
+					<div class="footer-socials">
+						<a href="https://www.linkedin.com/in/rodelyn-cardinas-8937a4388" target="_blank" aria-label="LinkedIn">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+						<a href="https://github.com/Abby122001" target="_blank" aria-label="GitHub">
+							<i class="fab fa-github"></i>
+						</a>
+						<a href="https://www.facebook.com/abbytoy0001" target="_blank" aria-label="Facebook">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="https://www.instagram.com/abby_zero9" target="_blank" aria-label="Instagram">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</div>
+				</div>
 			</div>
 
 			<div class="footer-bottom">
@@ -424,8 +412,19 @@
 		<!-- Like Button Script -->
 		<script>
 			const likeIcon = document.querySelector(".likes-icon");
+			const likeCount = document.getElementById("likeCount");
+			let likes = 0;
+
 			likeIcon.addEventListener("click", function () {
 				this.classList.toggle("liked");
+				
+				if (this.classList.contains("liked")) {
+					likes++;
+				} else {
+					likes = Math.max(0, likes - 1);
+				}
+				
+				likeCount.textContent = likes;
 			});
 		</script>
 
@@ -610,16 +609,69 @@
 			const lightbox = document.getElementById("lightbox");
 			const lightboxImg = document.getElementById("lightbox-img");
 
+			let heartInterval;
+
 			document.querySelectorAll(".gallery-item img").forEach((img) => {
 				img.addEventListener("click", () => {
+					// Show lightbox
 					lightboxImg.src = img.src;
 					lightbox.style.display = "flex";
+					
+					// Start continuous heart animation
+					startHeartAnimation();
 				});
 			});
 
-			// Close lightbox on click
+			// Function to create continuous floating hearts in lightbox
+			function startHeartAnimation() {
+				// Clear any existing interval
+				if (heartInterval) {
+					clearInterval(heartInterval);
+				}
+				
+				// Create hearts every 300ms
+				heartInterval = setInterval(() => {
+					createHeart();
+				}, 300);
+			}
+
+			function createHeart() {
+				const heart = document.createElement('div');
+				heart.classList.add('heart');
+				heart.innerHTML = '❤';
+				
+				// Get lightbox image dimensions
+				const imgRect = lightboxImg.getBoundingClientRect();
+				
+				// Random horizontal position within image width
+				const randomX = Math.random() * imgRect.width;
+				
+				// Position at bottom center of image
+				heart.style.left = `${imgRect.left + randomX}px`;
+				heart.style.top = `${imgRect.bottom - 50}px`;
+				
+				lightbox.appendChild(heart);
+				
+				// Remove heart after animation completes
+				setTimeout(() => {
+					heart.remove();
+				}, 2000);
+			}
+
+			// Close lightbox and stop hearts
 			lightbox.addEventListener("click", () => {
 				lightbox.style.display = "none";
+				
+				// Stop heart animation
+				if (heartInterval) {
+					clearInterval(heartInterval);
+					heartInterval = null;
+				}
+				
+				// Remove any remaining hearts
+				document.querySelectorAll('.lightbox .heart').forEach(heart => {
+					heart.remove();
+				});
 			});
 		</script>
 
