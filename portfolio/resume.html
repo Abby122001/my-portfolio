@@ -3,188 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume - Rodelyn C. Cardinas</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Resume</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: #f8c9d4;
+      background: #f5f5f5;
       display: flex;
-      justify-content: center;
-      padding: 30px;
-      font-family: 'Arial', sans-serif;
-    }
-    .resume {
-      display: flex;
-      width: 900px;
-      background: #fff;
-    }
-    /* Sidebar */
-    .sidebar {
-      width: 35%;
-      padding: 30px;
-      background: #fff;
-    }
-    .sidebar img {
-      width: 100%;
-      border: 4px solid #5b9638;
-    }
-    .sidebar h2 {
-      margin: 20px 0 10px;
-      font-size: 16px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-    .sidebar p {
-      font-size: 14px;
-      line-height: 1.6;
-      margin-bottom: 15px;
-      text-align: left; 
-    }
-    /* Skills */
-    .skill {
-      margin-bottom: 12px;
-    }
-    .skill-name {
-      font-size: 14px;
-      margin-bottom: 5px;
-    }
-    .skill-bar {
-      background: #ddd;
-      height: 8px;
-      border-radius: 5px;
-      overflow: hidden;
-    }
-    .skill-level {
-      height: 100%;
-      background: #5b9638;
-    }
-    /* Contact */
-    .contact p {
-      margin-bottom: 8px;
-      font-size: 14px;
-      display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 8px;
+      min-height: 100vh;
+      padding: 40px 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    .contact i {
-      color: #5b9638;
-    }
-    /* Main */
-    .main {
-      width: 65%;
-      padding: 40px;
-      margin-top: 60px;
-    }
-    .main h1 {
-      font-size: 32px;
-      font-weight: bold;
-      color: #111;
-
-    }
-    .main h3 {
-      font-size: 14px;
+    h1 {
+      font-size: 42px;
+      color: #2c3e50;
       margin-bottom: 30px;
-      color: #444;
-      letter-spacing: 2px;
-      margin-left: 10%;
+      font-weight: 700;
+      letter-spacing: 1px;
     }
-    .main h2 {
-      font-size: 18px;
-      margin: 20px 0 10px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: #111;
-      margin-top: 13%;
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
     }
-    .main h4 {
+    img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    .btn-home {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #3498db;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 6px;
       font-size: 16px;
-      margin-bottom: 5px;
-      font-weight: bold;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 10px rgba(52, 152, 219, 0.3);
     }
-    .main ul {
-      margin-left: 20px;
-      margin-bottom: 20px;
-      font-size: 14px;
-      color: #333;
-    }
-    .main p {
-      font-size: 14px;
-      margin-bottom: 10px;
-      line-height: 1.5;
+    .btn-home:hover {
+      background: #2980b9;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
     }
   </style>
 </head>
 <body>
-
-  <div class="resume">
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <img src="image/profileresume.png" alt="Rodelyn Cardinas">
-      
-      <h2>About Me</h2>
-      <p>NCII certified in Computer System Servicing (CSS), aspiring IT professional with skills in web design, troubleshooting, and system management. Passionate about continuous learning and eager to apply creativity and expertise to deliver practical IT solutions.</p>
-      
-      <h2>Skills</h2>
-      <div class="skill">
-        <p class="skill-name">Installing Windows Clients & Server - 99%</p>
-        <div class="skill-bar"><div class="skill-level" style="width:99%"></div></div>
-      </div>
-      <div class="skill">
-        <p class="skill-name">Networking & Troubleshooting - 95%</p>
-        <div class="skill-bar"><div class="skill-level" style="width:95%"></div></div>
-      </div>
-      <div class="skill">
-        <p class="skill-name">Web Design - 95%</p>
-        <div class="skill-bar"><div class="skill-level" style="width:95%"></div></div>
-      </div>
-      <div class="skill">
-        <p class="skill-name">(HTML/CSS) - 85%</p>
-        <div class="skill-bar"><div class="skill-level" style="width:85%"></div></div>
-      </div>
-      <div class="skill">
-        <p class="skill-name">Database Management - 90%</p>
-        <div class="skill-bar"><div class="skill-level" style="width:90%"></div></div>
-      </div>
-
-      <h2>Contact</h2>
-      <div class="contact">
-        <p><i class="fas fa-phone"></i> 096517245575</p>
-        <p><i class="fas fa-map-marker-alt"></i> Santa Catalina, Negros Oriental</p>
-        <p><i class="fas fa-envelope"></i> cardinasrodelyn12001@gmail.com</p>
-      </div>
-    </div>
-
-    <!-- Main -->
-    <div class="main">
-      <h1>Rodelyn C. Cardinas</h1>
-      <h3>Aspiring IT Professional</h3>
-
-      <h2>Education</h2>
-      <h4>Bachelor of Science in Computer Science</h4>
-      <p>Majors: Software Engineering</p>
-
-      <h2>Experience</h2>
-      <h4>Portfolio Website Development</h4>
-      <p>Jan 2023 – Present</p>
-      <ul>
-        <li>Designed, developed, and launched portfolio website.</li>
-        <li>Showcased web layout using HTML, CSS, and JavaScript.</li>
-      </ul>
-
-      <h4>IT Support Volunteer - Local Community Center</h4>
-      <ul>
-        <li>Installed technical assistance, hardware/software troubleshooting for staff and users.</li>
-      </ul>
-
-      <h4>Database Management</h4>
-      <p>Sept 2011 – Dec 2021</p>
-      <ul>
-        <li>Implemented database for Windows systems using SQL.</li>
-        <li>Created forms and reports for staff management.</li>
-      </ul>
-    </div>
+  <h1>Resume</h1>
+  <div class="content-wrapper">
+    <img src="image/resume.png" alt="Resume">
+    <a href="index.html" class="btn-home">← Back to Home</a>
   </div>
-
 </body>
 </html>
