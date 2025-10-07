@@ -580,7 +580,7 @@
     display: block;
     width: 60px;
     height: 3px;
-    background: #5b9638;
+    background: #FF5722;
     margin: 8px auto 0;
     border-radius: 2px;
   }
@@ -626,7 +626,7 @@
   .blog-button {
     display: inline-block;
     padding: 12px 24px;
-    background: #5b9638;
+    background: #FF5722;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -636,7 +636,7 @@
   
   .blog-button:hover {
     transform: scale(1.05);
-    background: #4a7d2e;
+    background:#FF5722;
     box-shadow: var(--shadow-hover);
   }
   
@@ -674,7 +674,7 @@
     display: block;
     width: 60px;
     height: 3px;
-    background: #5b9638;
+    background: #FF5722;
     margin-top: 8px;
     border-radius: 2px;
   }
@@ -757,7 +757,7 @@
   }
   
   .dots .active {
-    background: #5b9638;
+    background: #FF5722;
   }
 
   /* Heart Animation for Gallery */
@@ -845,7 +845,7 @@
     display: block;
     width: 60px;
     height: 3px;
-    background: #5b9638;
+    background: #FF5722;
     margin: 8px auto 0;
     border-radius: 2px;
   }
@@ -898,7 +898,7 @@
   
   .contact-form-container input:focus,
   .contact-form-container textarea:focus {
-    border-color: #5b9638;
+    border-color: #FF5722;
     outline: none;
     background: rgba(255, 255, 255, 0.08);
     box-shadow: 0 0 0 3px rgba(91, 150, 56, 0.1);
@@ -915,7 +915,7 @@
     cursor: pointer;
     border: none;
     border-radius: 8px;
-    background-color: #5b9638;
+    background-color: #FF5722;
     color: #fff;
     font-weight: 600;
     font-size: 1rem;
@@ -923,7 +923,7 @@
   }
   
   .contact-form-container button:hover {
-    background-color: #4a7d2e;
+    background-color: #FF5722;
     box-shadow: 0 0 15px rgba(106, 191, 75, 0.6);
     transform: translateY(-2px);
   }
@@ -978,7 +978,7 @@
   }
   
   .footer-section h4 {
-    color: #5b9638;
+    color:#FF5722;
     font-size: 1.2rem;
     margin-bottom: 1.2rem;
     font-weight: 600;
@@ -1035,18 +1035,18 @@
     padding: 8px 16px;
     border-radius: 25px;
     transition: all 0.3s ease;
-    border: 2px solid #5b9638;
+    border: 2px solid #FF5722;
     margin-top: 0.5rem;
     width: fit-content;
   }
   
   .likes-icon:hover {
-    background: #5b9638;
+    background: #FF5722;
     transform: scale(1.05);
   }
   
   .likes-icon.liked i {
-    color: #5b9638;
+    color: #FF5722;
     animation: likeAnimation 0.5s ease;
   }
   
@@ -1058,13 +1058,13 @@
   .likes-icon #likeCount {
     font-size: 1rem;
     font-weight: 600;
-    color: #5b9638;
+    color: #FF5722;
     min-width: 20px;
   }
   
   /* Navigation Section */
   .footer-navigation h4 {
-    color: #5b9638;
+    color: #FF5722;
   }
   
   .footer-nav-list {
@@ -1090,12 +1090,12 @@
     content: "▸";
     position: absolute;
     left: 0;
-    color: #5b9638;
+    color: #FF5722;
     transition: transform 0.3s ease;
   }
   
   .footer-nav-list li a:hover {
-    color: #5b9638;
+    color: #FF5722;
     padding-left: 20px;
   }
   
@@ -1105,7 +1105,7 @@
   
   /* Contact Section */
   .footer-contact h4 {
-    color: #5b9638;
+    color: #FF5722;
   }
   
   .footer-contact-list {
@@ -1128,19 +1128,19 @@
   }
   
   .footer-contact-list li a:hover {
-    color: #5b9638;
+    color: #FF5722;
     transform: translateX(5px);
   }
   
   .footer-contact-list i {
     font-size: 1.1rem;
-    color: #5b9638;
+    color: #FF5722;
     min-width: 20px;
   }
   
   /* Social Section */
   .footer-social h4 {
-    color: #5b9638;
+    color: #FF5722;
   }
   
   .footer-socials {
@@ -1161,11 +1161,11 @@
     color: #fff;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    border: 2px solid #5b9638;
+    border: 2px solid #FF5722;
   }
   
   .footer-socials a:hover {
-    background: #5b9638;
+    background: #FF5722;
     color: #fff;
     transform: translateY(-5px) rotate(360deg);
     box-shadow: 0 5px 15px rgba(91, 150, 56, 0.4);
@@ -1187,7 +1187,7 @@
   
   .footer-divider {
     height: 1px;
-    background: linear-gradient(to right, transparent, #5b9638, transparent);
+    background: linear-gradient(to right, transparent, #FF5722, transparent);
     margin-bottom: 1.5rem;
   }
   
@@ -1206,7 +1206,7 @@
   }
   
   .footer-copyright strong {
-    color: #5b9638;
+    color: #FF5722;
     font-weight: 600;
   }
   
