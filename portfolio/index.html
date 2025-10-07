@@ -339,22 +339,38 @@
 
 	<!-- Footer Section -->
 		<footer class="footer">
-			<div class="footer-top">
-				<!-- Clickable Likes icon -->
-				<div class="likes-icon" id="likeBtn">
-					<i class="fa-solid fa-thumbs-up"></i>
-					<span id="likeCount">0</span>
-				</div>
-			</div>
-
 			<div class="footer-content">
-				<div class="footer-section footer-logo-section">
-					<img src="image/logo.png" alt="Logo" class="footer-logo-img" />
-					<h3>Portfolio</h3>
+				<!-- Brand Section -->
+				<div class="footer-section footer-brand">
+					<div class="footer-logo">
+						<img src="image/logo.png" alt="Portfolio Logo" class="footer-logo-img" />
+						<h3>Rodelyn Cardinas</h3>
+					</div>
+					<p class="footer-tagline">
+						Aspiring IT Professional | Web Designer | CSS NCII Certified
+					</p>
+					<div class="likes-icon" id="likeBtn">
+						<i class="fa-solid fa-thumbs-up"></i>
+						<span id="likeCount">0</span>
+					</div>
 				</div>
 
+				<!-- Quick Links Navigation -->
+				<div class="footer-section footer-navigation">
+					<h4>Quick Links</h4>
+					<ul class="footer-nav-list">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#blogs">Blogs</a></li>
+						<li><a href="#gallery">Gallery</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+
+				<!-- Contact Information -->
 				<div class="footer-section footer-contact">
-					<h4>Contact info.</h4>
+					<h4>Contact Information</h4>
 					<ul class="footer-contact-list">
 						<li>
 							<a href="mailto:cardinasrodelyn122001@gmail.com">
@@ -371,36 +387,44 @@
 						<li>
 							<a href="https://maps.google.com/?q=Dumaguete+City" target="_blank">
 								<i class="fas fa-map-marker-alt"></i>
-								<span>Dumaguete City</span>
+								<span>Dumaguete City, Philippines</span>
 							</a>
 						</li>
 					</ul>
 				</div>
 
+				<!-- Social Media -->
 				<div class="footer-section footer-social">
-					<h4>Follow Me</h4>
+					<h4>Connect With Me</h4>
 					<div class="footer-socials">
-						<a href="https://www.linkedin.com/in/rodelyn-cardinas-8937a4388" target="_blank" aria-label="LinkedIn">
+						<a href="https://www.linkedin.com/in/rodelyn-cardinas-8937a4388" target="_blank" aria-label="LinkedIn" title="LinkedIn">
 							<i class="fab fa-linkedin-in"></i>
 						</a>
-						<a href="https://github.com/Abby122001" target="_blank" aria-label="GitHub">
+						<a href="https://github.com/Abby122001" target="_blank" aria-label="GitHub" title="GitHub">
 							<i class="fab fa-github"></i>
 						</a>
-						<a href="https://www.facebook.com/abbytoy0001" target="_blank" aria-label="Facebook">
+						<a href="https://www.facebook.com/abbytoy0001" target="_blank" aria-label="Facebook" title="Facebook">
 							<i class="fab fa-facebook-f"></i>
 						</a>
-						<a href="https://www.instagram.com/abby_zero9" target="_blank" aria-label="Instagram">
+						<a href="https://www.instagram.com/abby_zero9" target="_blank" aria-label="Instagram" title="Instagram">
 							<i class="fab fa-instagram"></i>
 						</a>
 					</div>
+					<p class="footer-social-text">Follow me on social media for updates</p>
 				</div>
 			</div>
 
+			<!-- Footer Bottom -->
 			<div class="footer-bottom">
-				<p class="footer-about-text">
-					Aspiring IT professional | Web Designer | CSS NCII Certified
-				</p>
-				<p>© 2025 Rodelyn Cardinas | All Rights Reserved</p>
+				<div class="footer-divider"></div>
+				<div class="footer-bottom-content">
+					<p class="footer-copyright">
+						© 2025 <strong>Mr. Lawrence Euneil Caguioa</strong>. All Rights Reserved.
+					</p>
+					<p class="footer-credits">
+						Designed & Developed by Rodelyn Cardinas
+					</p>
+				</div>
 			</div>
 		</footer>
 
@@ -417,13 +441,13 @@
 
 			likeIcon.addEventListener("click", function () {
 				this.classList.toggle("liked");
-				
+
 				if (this.classList.contains("liked")) {
 					likes++;
 				} else {
 					likes = Math.max(0, likes - 1);
 				}
-				
+
 				likeCount.textContent = likes;
 			});
 		</script>
@@ -661,13 +685,13 @@
 			// Close lightbox and stop hearts
 			lightbox.addEventListener("click", () => {
 				lightbox.style.display = "none";
-				
+
 				// Stop heart animation
 				if (heartInterval) {
 					clearInterval(heartInterval);
 					heartInterval = null;
 				}
-				
+
 				// Remove any remaining hearts
 				document.querySelectorAll('.lightbox .heart').forEach(heart => {
 					heart.remove();
@@ -684,11 +708,11 @@
 			// Function to set active nav link
 			function setActiveNav() {
 				let currentSection = '';
-				
+
 				sections.forEach(section => {
 					const sectionTop = section.offsetTop - 100;
 					const sectionHeight = section.clientHeight;
-					
+
 					if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
 						currentSection = section.getAttribute('id');
 					}
@@ -709,7 +733,7 @@
 					navLinks.forEach(l => l.parentElement.classList.remove('active'));
 					// Add active class to clicked link
 					this.parentElement.classList.add('active');
-					
+
 					// Close mobile menu if open
 					const navToggle = document.getElementById('nav-toggle');
 					if (navToggle) {
