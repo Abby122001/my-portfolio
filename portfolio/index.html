@@ -104,45 +104,52 @@
 						</div>
 					</div>
 				</div>
-			</div>
 		</section>
 
     <!-- ABOUT SECTION -->
 		<section id="about" class="reveal">
 			<div class="about-container">
-				<div class="about-image reveal">
-					<img src="image/aboutprofile.jpg" alt="My Image" />
-				</div>
+				<h1 class="about-title">About Me</h1>
+				
+				<div class="about-content">
+					<div class="about-image reveal">
+						<img src="image/aboutprofile.jpg" alt="My Image" />
+					</div>
 
-				<div class="about-text reveal">
-					<h1>About Me</h1>
-					<p>
-						Hi! I’m Rodelyn C. Cardinas, an NCII Certified Computer System
-						Servicing (CSS) student and an aspiring IT professional who is
-						passionate about learning and growing in the field of technology.
-					</p>
-					<p>
-						I enjoy combining creativity and technical skills — whether it’s
-						through web design, troubleshooting computer systems, or exploring
-						new IT concepts. My projects reflect my curiosity and commitment to
-						building practical and innovative solutions.
-					</p>
-					<p>
-						As I continue my studies, I aim to expand my knowledge in web
-						development, networking, and system support, with the goal of
-						becoming a well-rounded IT professional ready to take on real-world
-						challenges.
-					</p>
-					<p>
-						I believe that with continuous learning and hands-on practice, I can
-						turn my passion for technology into meaningful contributions in the
-						IT industry.
-					</p>
+					<div class="about-text reveal">
+						<p>
+							Hi! I'm Rodelyn C. Cardinas, an NCII Certified Computer System
+							Servicing (CSS) student and an aspiring IT professional who is
+							passionate about learning and growing in the field of technology.
+						</p>
+						<p>
+							I enjoy combining creativity and technical skills — whether it's
+							through web design, troubleshooting computer systems, or exploring
+							new IT concepts. My projects reflect my curiosity and commitment to
+							building practical and innovative solutions.
+						</p>
+						<p>
+							As I continue my studies, I aim to expand my knowledge in web
+							development, networking, and system support, with the goal of
+							becoming a well-rounded IT professional ready to take on real-world
+							challenges.
+						</p>
+						<p>
+							I believe that with continuous learning and hands-on practice, I can
+							turn my passion for technology into meaningful contributions in the
+							IT industry.
+						</p>
+						<p>
+							Feel free to explore my projects and learn more about my journey as an
+							aspiring IT professional.
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Skills Section -->
+{{ ... }}
 		<section id="skills">
 			<h1>Skills</h1>
 			<p class="skills-subtitle">My technical expertise in key areas</p>
@@ -640,7 +647,7 @@
 					// Show lightbox
 					lightboxImg.src = img.src;
 					lightbox.style.display = "flex";
-					
+
 					// Start continuous heart animation
 					startHeartAnimation();
 				});
@@ -652,7 +659,7 @@
 				if (heartInterval) {
 					clearInterval(heartInterval);
 				}
-				
+
 				// Create hearts every 300ms
 				heartInterval = setInterval(() => {
 					createHeart();
