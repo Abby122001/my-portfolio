@@ -1027,6 +1027,7 @@
     border-radius: 8px;
     width: 100%;
     background: rgba(255, 255, 255, 0.05);
+    color: #fff;
 
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -1261,25 +1262,57 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background: rgba(255, 87, 34, 0.12);
+    background: rgba(255, 255, 255, 0.1);
     color: #fff;
     font-size: 1.1rem;
-    transition: all 0.3s ease;
-    border: 2px solid #FF5722;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 2px solid var(--secondary-color);
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .footer-socials a:hover {
     background: #FF5722;
     color: #fff;
-    box-shadow: 0 5px 15px var(--secondary-color);
     transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  i{
+    font-style: italic;
+    color: #bbb;
+    font-size: 0.9rem;
   }
   
-  .footer-social-text {
-    color: #888;
-    font-size: 0.85rem;
-    margin: 0;
-    font-style: italic;
+  /* Back to Top Button */
+  #back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 87, 34, 0.8);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 99;
+  }
+  
+  #back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  #back-to-top:hover {
+    background: #FF5722;
+    transform: translateY(-2px);
   }
   
   /* Footer Bottom */
@@ -1287,6 +1320,8 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+    position: relative;
+    z-index: 1;
   }
   
   .footer-divider {
@@ -1297,7 +1332,7 @@
   
   .footer-bottom-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
